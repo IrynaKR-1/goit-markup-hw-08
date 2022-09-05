@@ -1,0 +1,15 @@
+@mixin header-font($td, $fw, $fs, $lh, $ls) {
+  text-decoration: $td;
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+
+@mixin footer-font($fw, $fs, $lh, $ls) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+  font-family: "Raleway", sans-serif;
+}

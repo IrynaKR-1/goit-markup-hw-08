@@ -1,0 +1,32 @@
+.logo {
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+}
+.logo__web {
+  @include footer-font(700, 24px, 1.17, 0.03em);
+  color: var(--main-color);
+  @media screen and (min-width: 1200px) {
+    @include footer-font(700, 26px, 1.19, 0.03em);
+  }
+}
+.logo__studio {
+  @include footer-font(700, 24px, 1.17, 0.03em);
+  @media screen and (min-width: 1200px) {
+    @include footer-font(700, 26px, 1.19, 0.03em);
+  }
+}
+.logo__studio--dark {
+  color: #000000;
+}
+.logo__studio--white {
+  color: var(--third-main-color);
+}
+.footer__logo {
+  margin-bottom: 20px;
+  justify-content: center;
+  display: flex;
+  @media screen and (min-width: 1200px) {
+    justify-content: left;
+  }
+}

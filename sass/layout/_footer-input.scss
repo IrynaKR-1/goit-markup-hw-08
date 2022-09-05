@@ -1,0 +1,90 @@
+.mailing {
+  // margin-left: 93px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+.mailing__title {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  color: var(--third-main-color);
+  text-transform: uppercase;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 20px;
+  }
+}
+
+.mailing__email {
+  width: 100%;
+  height: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: #2f303a;
+  color: rgba(255, 255, 255, 0.6);
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    border-color: var(--main-color);
+  }
+  &:focus {
+    border-color: var(--main-color);
+  }
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
+}
+
+.mailing__button {
+  position: relative;
+  width: 200px;
+  height: 50px;
+  background: var(--main-color);
+  border-radius: 4px;
+  margin-left: 12px;
+  color: var(--third-main-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  border-color: var(--main-color);
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: left;
+  padding-left: 28px;
+  border: none;
+  letter-spacing: 0.06em;
+  &:hover {
+    background: var(--main-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  &:focus {
+    background: var(--main-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  }
+}
+
+.mailing__icon {
+  position: absolute;
+  right: 13px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
